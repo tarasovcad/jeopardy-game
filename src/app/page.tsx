@@ -30,7 +30,7 @@ const Page = () => {
       <div className="flex flex-col justify-center items-center gap-10 h-screen">
         <h1 className="font-serif font-extrabold text-5xl">BLOCKPARDY</h1>
         <div className="flex flex-col gap-4">
-          <Link href="/game?step=1">
+          <Link href="/game/teams">
             <Button type="button" className="w-64 cursor-pointer">
               Start Game
             </Button>
