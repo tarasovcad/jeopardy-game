@@ -3,12 +3,16 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import useSound from 'use-sound';
+
 const Page = () => {
   const [showPig, setShowPig] = useState(false);
+  const [playPigSound] = useSound('/sounds/pig.ogg');
 
   useEffect(() => {
     const interval = setInterval(() => {
       setShowPig(true);
+      playPigSound();
 
       // Remove pig after animation completes (3 seconds)
       setTimeout(() => {
@@ -17,7 +21,7 @@ const Page = () => {
     }, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [playPigSound]);
 
   return (
     <div className="relative">

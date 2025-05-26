@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card } from './ui/card';
 import Image from 'next/image';
 
-const teamsToChooseFrom = [
+export const teamsToChooseFrom = [
   {
     id: 1,
     name: 'Tralalero Tralala',
@@ -50,7 +50,7 @@ const teamsToChooseFrom = [
   },
   {
     id: 10,
-    name: 'Madindindu Madindindu',
+    name: 'Madindindu',
     image: '/images/MADINDINDU_MADINDINDU.jpg',
   },
   {
