@@ -1,14 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import React from 'react';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
-export type MaskedImageVariant =
-  | "shape1"
-  | "shape2"
-  | "shape3"
-  | "shape4"
-  | "shape5"
-  | "shape6";
+export type MaskedImageVariant = 'shape1' | 'shape2' | 'shape3' | 'shape4' | 'shape5' | 'shape6';
 
 interface MaskedImageProps {
   src: string;
@@ -21,12 +15,12 @@ interface MaskedImageProps {
 
 const getMaskUrl = (variant: MaskedImageVariant): string => {
   const maskMap: Record<MaskedImageVariant, string> = {
-    shape1: "/mask-shape-1.svg",
-    shape2: "/mask-shape-2.svg",
-    shape3: "/mask-shape-3.svg",
-    shape4: "/mask-shape-4.svg",
-    shape5: "/mask-shape-5.svg",
-    shape6: "/mask-shape-6.svg",
+    shape1: '/mask-shape-1.svg',
+    shape2: '/mask-shape-2.svg',
+    shape3: '/mask-shape-3.svg',
+    shape4: '/mask-shape-4.svg',
+    shape5: '/mask-shape-5.svg',
+    shape6: '/mask-shape-6.svg',
   };
 
   return maskMap[variant];
@@ -37,17 +31,14 @@ export const MaskedImage: React.FC<MaskedImageProps> = ({
   alt,
   width,
   height,
-  variant = "shape1",
+  variant = 'shape1',
   className,
 }) => {
   const maskUrl = getMaskUrl(variant);
 
   return (
     <Image
-      className={cn(
-        "mask-no-repeat object-cover mask-size-[100%_100%] mask-center",
-        className
-      )}
+      className={cn('mask-no-repeat object-cover mask-size-[100%_100%] mask-center', className)}
       style={{ maskImage: `url(${maskUrl})` }}
       src={src}
       alt={alt}
