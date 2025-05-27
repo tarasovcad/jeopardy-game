@@ -16,9 +16,7 @@ const Game = () => {
   const handleNextStep = () => {
     if (currentStep === 1) {
       setCurrentStep(2);
-    } else if (currentStep === 2) {
-      setCurrentStep(3);
-    } else if (currentStep === 3) {
+    } else if (currentStep === 2 || 3) {
       redirect('/game');
     }
   };
