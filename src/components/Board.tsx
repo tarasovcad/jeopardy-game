@@ -41,61 +41,105 @@ type AnswersType = {
 const CATEGORIES: CategoryProps[] = [
   {
     title: 'Causes',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
   {
     title: 'Archduke Ferdinand',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
   {
     title: 'Innovations',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
   {
     title: 'Impact on home front',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
   {
     title: 'Important battles',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
   {
     title: 'Treaty of Versailles',
-    values: [200, 400, 600, 800, 1000],
+    values: [200, 400, 600, 800],
   },
 ];
 
 const QUESTIONS: QuestionsType = {
   Causes: {
-    200: 'What was the main alliance system that contributed to WWI?',
-    400: 'Which empire was known as the "sick man of Europe"?',
-    600: 'What was the immediate cause of WWI?',
-    800: 'Which country declared war first in WWI?',
-    1000: 'What was the Schlieffen Plan?',
+    200: 'This cause of World War I is when a country builds up its military and believes war is a good way to solve problems.',
+    400: 'Before World War I, European countries like Britain, France, and Germany competed for colonies because of this cause.',
+    600: "This cause involves strong pride in one's nation, which made countries like Germany and France more likely to go to war.",
+    800: 'In the Balkans, some ethnic groups wanted to break away from empires due to this belief in their own national identity',
   },
   'Archduke Ferdinand': {
-    200: 'In which city was Archduke Franz Ferdinand assassinated?',
-    400: 'What was the name of the assassin?',
-    600: 'Which organization was behind the assassination?',
-    800: 'On what date was the Archduke killed?',
-    1000: "What was the Archduke's full title?",
+    200: 'Who heir to the Austro-Hungarian throne?',
+    400: 'This Bosnian Serb nationalist group was linked to the assassination plot.',
+    600: 'The assassination of Archduke Franz Ferdinand occurred in what city?',
+    800: 'This teenage assassin fired the fatal shots at Franz Ferdinand and his wife, Sophie.',
+  },
+  Innovations: {
+    200: 'Which invention we discussed was made DURING WWI?',
+    400: 'What did Frederick Banting invent?',
+    600: 'Which invention we discussed was developed the latest?',
+    800: 'Which area in Canada had the most advancements AFTER WWI?',
+  },
+  'Impact on home front': {
+    200: 'Which groups of people had to handle more work in Canada during WWI?',
+    400: 'Who was alienated during WWI and were called “enemy aliens” by many Canadian citizens?',
+    600: 'Give 3 impacts that we discussed on Canada during the war, they can be positive or negative.',
+    800: 'When was conscription implemented in Canada?',
+  },
+  'Important battles': {
+    200: 'This 1914 battle near Paris stopped the German advance and marked the start of trench warfare.',
+    400: 'Known as one of the bloodiest battles in history, this 1916 offensive introduced tanks but achieved little breakthrough.',
+    600: 'Fought for 10 months in 1916, this battle was a German effort to weaken France but ended with France holding its ground.',
+    800: 'This 1917 battle in Belgium was fought in deep mud and ended with Canadian forces capturing the final objective.',
+  },
+  'Treaty of Versailles': {
+    200: 'On what date was the Treaty of Versailles signed?',
+    400: 'Who was blamed for World War I in the Treaty of Versailles?',
+    600: 'What economic crisis happened in Germany in 1923?',
+    800: 'Which German government accepted the Treaty of Versailles?',
   },
 };
 
 const ANSWERS: AnswersType = {
   Causes: {
-    200: 'The Triple Alliance and Triple Entente',
-    400: 'The Ottoman Empire',
-    600: 'The assassination of Archduke Franz Ferdinand',
-    800: 'Austria-Hungary',
-    1000: "Germany's plan to quickly defeat France before turning to fight Russia",
+    200: 'Militarism',
+    400: 'Imperialism',
+    600: 'Nationalism',
+    800: 'Nationalism',
   },
   'Archduke Ferdinand': {
-    200: 'Sarajevo',
-    400: 'Gavrilo Princip',
-    600: 'The Black Hand',
-    800: 'June 28, 1914',
-    1000: 'Archduke Franz Ferdinand of Austria-Este',
+    200: 'Archduke Franz Ferdinand',
+    400: 'The Black Hand',
+    600: 'Sarajevo',
+    800: 'Gavrilo Princip',
+  },
+  Innovations: {
+    200: 'Sonar Detection',
+    400: 'Insulin',
+    600: 'G-suit',
+    800: 'Western Canada',
+  },
+  'Impact on home front': {
+    200: 'Women and children',
+    400: 'Germans and Ukrainians',
+    600: 'Food shortage, agricultural increase, employment increase, social divide, higher taxes',
+    800: '1917',
+  },
+  'Important battles': {
+    200: 'The Battle of the Marne',
+    400: 'The Battle of the Somme',
+    600: 'The Battle of Verdun',
+    800: 'The Battle of Passchendaele',
+  },
+  'Treaty of Versailles': {
+    200: 'June 28, 1919',
+    400: 'Germany',
+    600: 'Hyperinflation',
+    800: 'Weimar',
   },
 };
 
